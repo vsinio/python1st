@@ -12,11 +12,11 @@
 x = int(input('Введите координату Х: '))
 y = int(input('Введите координату Y: '))
 
-if x>0 and y>0:
+if x > 0 and y > 0:
     print(f'x={x}, y={y} ---> 1 четверть')
-elif x<0 and y>0:
+elif x < 0 and y > 0:
     print(f'x={x}, y={y} ---> 2 четверть')
-elif x<0 and y<0:
+elif x < 0 and y < 0:
     print(f'x={x}, y={y} ---> 3 четверть')
 else:
     print(f'x={x}, y={y} ---> 4 четверть')
