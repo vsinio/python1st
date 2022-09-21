@@ -62,3 +62,113 @@ print(a)
 b = [1,2]
 c = [1,2]
 print(b == c) # True тк сравнение идет по элементно'''
+
+#func = 1
+#T = 4
+#x = 123
+
+#print(func<T>x)
+
+#f = 1 > 2 or 4 < 6 # тк 1 истинно = True
+#f = [1,2,3,4]
+#print(2 in f) # тк 2 есть в списке f = True
+#f = [1,2,3,4]
+#print(not 2 in f) # тк 2 есть в списке f = False
+
+'''f = [1,2,3,4]
+
+is_odd = not f[1] % 2  #is_odd = f[1] % 2 == 0 /// true тк f[1] (индекс) = 2 
+print(is_odd) '''
+
+# if else   обязательно после if else ставить : 
+
+'''a = int(input())
+b = int(input())
+if a>b:
+    print(f'большее число : {a}')
+else:
+    print(f'большее число : {b}')'''
+
+'''username = input('Введите имя пользователя: ')
+if username == 'Masha':
+    print("Hello Masha")
+elif username == 'Vanya':
+    print('Hello Sin')
+elif username == 'Sasha':
+    print('Hello Alex')
+else:
+    print('Знакомы?')'''
+
+#while и после двоеточие!!!
+
+'''origin = 233
+invert = 0
+while origin != 0:
+    invert = invert * 10 + ( origin % 10)
+    origin //=10
+else:
+    print('Пожалуй')
+    print('Хватит')
+print(invert)    '''
+
+#цикл for
+
+
+'''lst = [32,2235,337,332,142]
+for i in lst:
+    print(i)
+r = range(10) # создание от 0 до 10(не вкл) 0 1 2 3 4 5 6 7 8 9
+k = range(1,5) # от 1 вкл до 5 не вкл, т.е. 1,2,3,4
+m = range(1,10,2) # от 1 вкл до 10 не вкл с шагом 2! т.е. 1 3 5 7 9
+for i in k:
+    print(i)'''
+
+    # немного о строках
+
+'''text = 'сьешь еще этих мягких французских булок'
+print(len(text)) # длина строки
+print('еще' in text) # проверка 'еще' в переменной text = true
+print(text.isdigit()) # проверка являются ли все символы числами false
+print(text.islower()) # являются ли все в нижнем регистре БеЗ ВоТТ этОгО true
+print(text.replace('еще', 'ЕЩЕ')) #замена маленького еще на большое ЕЩЕ
+#срезы
+print(text[1]) #ь тк индекс
+print(text[:]) #все, тк от 0 до len(text)-1
+print(text[::6]) #сеикакл, тк от 0 до конца каждые 6 символов
+print(text[:5]) #сьешь тк от 0 до индекса5 не вкл(0.1.2.3.4)
+print(text[-5])#б   отсчет с конца'''
+
+#списки
+
+'''numbers = [1,2,3,4,5]
+ran = range(1,6) #1,2,3,4,5
+numbers1 = list(ran)
+print(numbers)
+print(numbers1)'''
+
+'''col = ['red', 'green', 'blue']
+print(col) #r g b 
+col.append('gray')#добавить в конец списка
+print(col)#r g b gray 
+print(col*2)#r g b r g b 
+print()
+for i in col:
+    print(i*2) #вывод элементов из цикла: rr, gg, bb, grgr
+print()
+col.remove('red') #удалить элемент red из списка col[0] = так же можно по индексу
+#так же можно del[0]
+print(col)
+del col[1] #удалить жлемент блу
+print(col)
+'''
+
+'''#функции
+def f(x):
+    if x==1:
+        return "целое" #str
+    elif x == 2.3:
+        return 23 #int
+    else:
+        return #nonetype
+
+print(f(255))'''
