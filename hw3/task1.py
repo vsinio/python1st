@@ -7,7 +7,7 @@ from random import randint
 len_lst = int(input("Введите длинну списка: "))
 lst = []
 for i in range(len_lst):
-    lst.append(randint(0,10))
+    lst.append(randint(0, 10))
 
 print(f"список состоящий из {len_lst} элементов {lst}")
 
@@ -15,8 +15,8 @@ print(f"список состоящий из {len_lst} элементов {lst}"
 odd_summ = 0
 index = 0
 while index < len(lst):
-    if (index+1) % 2 != 0:
-        odd_summ+=lst[index]
-    index+=1
+    if index % 2 == 0:
+        odd_summ += lst[index]
+    index += 1
 
 print(f"сумма нечетных элементов = {odd_summ}")
