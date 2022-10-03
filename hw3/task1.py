@@ -19,4 +19,10 @@ while index < len(lst):
         odd_summ += lst[index]
     index += 1
 
-print(f"сумма нечетных элементов = {odd_summ}")
+print(f"\while\сумма нечетных элементов = {odd_summ}")
+
+odd_summ_2 = 0
+for i in range(0,len_lst,2):
+    odd_summ_2+=lst[i]
+
+print(f"\For\сумма нечетных элементов = {odd_summ_2}")
