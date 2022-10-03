@@ -1,11 +1,11 @@
 # 1st method
 
-# colors = ['red', 'green', 'blue']
-# data = open('file.txt','a') #'a' - добавляет все время данные в файл file.txt / 'w' заменяет все что есть и
-# # добавляет то, что написано свыше
-# data.writelines(colors)
-# data.write('\nLine1\n') #написать еще одно сообщение + на след стркоу
-# data.close()  #закрыть работу файла(оборвать связь)
+colors = ['red', 'green', 'blue']
+data = open('file.txt','a') #'a' - добавляет все время данные в файл file.txt / 'w' заменяет все что есть и
+# добавляет то, что написано свыше
+data.writelines(colors)
+data.write('\nLine1\n') #написать еще одно сообщение + на след стркоу
+data.close()  #закрыть работу файла(оборвать связь)
 
 
 # #2nd method
@@ -107,14 +107,14 @@
 # for j in lst2:
 #     print(j)
 
-lst = [1,2,3,4,5]
-print(len(lst))
-print(lst.pop()) #удаляет последний символ
-print(lst)
-print(lst.pop(2)) #удаляет второй символ(2 по индексу, тут это 3 !)
-print(lst)
-print(lst.insert(2,333)) # на элемент с индексом 2 вставляет число 333
-print(lst)
-lst.append(11) #добавляет 11 в конец 
-print(lst)
+# lst = [1,2,3,4,5]
+# print(len(lst))
+# print(lst.pop()) #удаляет последний символ
+# print(lst)
+# print(lst.pop(2)) #удаляет второй символ(2 по индексу, тут это 3 !)
+# print(lst)
+# print(lst.insert(2,333)) # на элемент с индексом 2 вставляет число 333
+# print(lst)
+# lst.append(11) #добавляет 11 в конец 
+# print(lst)
 
