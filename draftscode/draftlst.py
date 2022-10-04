@@ -1,6 +1,6 @@
 
 
-def new_random_lst(x): #ввод количества элементов в списке
+def new_random_lst(x):  # ввод количества элементов в списке
     from random import randint
     len_lst = x
     lst = []
@@ -9,7 +9,17 @@ def new_random_lst(x): #ввод количества элементов в сп
     return lst
 
 
-print(new_random_lst(6))
-
 lst = new_random_lst(6)
 print(lst)
+
+
+def from10to2(x): #перевод из 10 в 2 СС
+    two_cc = ''
+    while x > 0:
+        cc = x % 2
+        two_cc += str(cc)
+        x //= 2
+    return two_cc
+
+
+print(from10to2(cc))
