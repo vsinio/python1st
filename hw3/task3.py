@@ -20,6 +20,6 @@ for i in range(len(lst)): #наполнил список lst_sec дробным�
 print(f"\nПервоначальный список = {lst}\n")
 print(f"Новый список с дробной частью = {lst_sec}\n")
 print(f"max дробная часть = {max(lst_sec)} \n\nmin дробная часть = {min(lst_sec)}\n")
-print(f"Вывод как в примере: \n\n{lst} => {round(max(lst_sec) - min(lst_sec),2)}\n\n")
+print(f"Вывод как в примере: \n\n{lst} => {round(max(lst_sec) - min(lst_sec),2)}")
 
 
