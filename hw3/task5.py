@@ -2,6 +2,8 @@
 # Пример:
 #  для k = 8 список будет выглядеть так: [-21 ,13, -8, 5, −3, 2, −1, 1, 0, 1, 1, 2, 3, 5, 8, 13, 21]
 # (-1)**(x+1) * fibonacci(x)
+import os
+os.system('cls')
 
 def lst_keyboard(x):  # создать список от -N до N
     len_n = -x
@@ -15,6 +17,8 @@ def fibonacci(n):
     if n < 2:
         return n
     return fibonacci(n-2) + fibonacci(n-1)
+
+    
 
 
 
@@ -34,6 +38,6 @@ for i in lst:
 
 
 print(f"Первоначальный список = {lst}")
-print(f"Список с числами Фибоначчи 0+ = {lst_fibb}")
+print(f"Список с числами Фибоначчи 0+= = {lst_fibb}")
 print(f"Список с числами Фибоначчи 0- = {lst_mines_fibb}")
 print(f"Итоговый список с числами Фибоначчи = {lst_mines_fibb + lst_fibb}")
