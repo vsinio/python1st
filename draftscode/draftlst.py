@@ -33,3 +33,6 @@ def secfibonacci(n): #фибоначчи второй вариант
 
 print(fibonacci(10))
 
+import os # ОЧИСТИТЬ КОНСОЛЬ
+os.system('cls') 
+
