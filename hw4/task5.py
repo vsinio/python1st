@@ -9,7 +9,7 @@ def read_file(name):
     path = str(name)
     data = open(path, 'r') #'r' = чтение файлов
     for line in data:
-        None
+        pass #1 None => pass
     data.close()
     return str(line)
 
@@ -23,7 +23,7 @@ print(sec_file)
 def newdig_lst(x):
     lst = []
     for i in x:
-        if i.isdigit() == True:
+        if i.isdigit(): #2 ==TRUE delete
             lst.append(i)
 
     return lst
@@ -42,7 +42,7 @@ def summ_lst(x,y): #сумма двух списков цифр полученн
 
     return lst
 bc = summ_lst(lst_1, lst_2)
-summ_polynomial = (f"{bc[0]}x^{bc[1]} + {bc[2]}x^{bc[3]} + {bc[4]}x + {bc[5]} = {bc[6]}")
+summ_polynomial = f"{bc[0]}x^{bc[1]} + {bc[2]}x^{bc[3]} + {bc[4]}x + {bc[5]} = {bc[6]}" #3 ()
 
 with open(f"file_summ.txt","w") as data:
     data.write(summ_polynomial)
