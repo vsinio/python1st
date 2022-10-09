@@ -11,7 +11,7 @@ def del_symb(text, what_del):
     new_text = ""
     for i in text:
         if i not in what_del:
-            new_text+=str(i)
+            new_text+=i
     return new_text
 
 new_text = del_symb(text_for_def,symb)
