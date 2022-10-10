@@ -1,5 +1,5 @@
 
-mess = "AAAAABBBBBCDDDDDEEEEE"
+mess = "AAAAAAAAAAAAAABBBBBCDDDDDEEEEEF"
 
 def RLE(somestr): #Функция RLE RESULLT: 5A5B1C5D5E
     final = ""
@@ -19,19 +19,19 @@ def RLE(somestr): #Функция RLE RESULLT: 5A5B1C5D5E
             return final
 print(RLE(mess))
 
-mess_res = RLE(mess) #5A5B1C5D5E
 
-mess_res = "5A5B1C5D5E"
+mess_res = "14A5B1C5D5E1F"
 
-def res_RLE(somestr):
+def res_RLE(somestr): #decoder 
     final_str = ""
     index = 0
-
+    count = ""
     for i in somestr:
         if i.isdigit():
-            final_str+=somestr[index+1]
+            count+=i
+        else:
+            final_str+=int(count)*i
+            count = ""
         index+=1
     return final_str
-            
-
-res_RLE(mess_res)
+print(res_RLE(mess_res))
