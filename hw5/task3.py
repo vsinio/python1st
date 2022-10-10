@@ -36,13 +36,24 @@ def winner(board):
 
 def cross_zero():
     end = False
+    player = 2
     while end == False:
         print_board(board_lst)
-        input_symbol(int(input("Введите число на поле: ")), input("Введите свой знак: "))
+        if player % 2 == 0:
+            print("Игрок 1, ваш ход!")
+            b="X"
+            input_symbol(int(input("Введите число на поле: ")), b)
+        else:
+            print("Игрок 2, ваш ход!")
+            b="O"
+            input_symbol(int(input("Введите число на поле: ")), b)
+            
+        player +=1
         win = winner(board_lst)
         if win == "":
             end == False
         else:
+            print_board(board_lst)
             return f"{win} - Победитель!"
         
 
