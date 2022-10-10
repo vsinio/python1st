@@ -13,7 +13,7 @@
 # print(new_text)
 
 
-text = "абвесили меня сегодня абвечером абв"
+text = "абвесили меня сегодня абвечером абв ноабве"
 delete = "абв"
 def delete_word(text, delete):
     lst = text.split()
