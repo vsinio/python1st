@@ -15,6 +15,8 @@
 
 text = "абвесили меня сегодня абвечером абв ноабве"
 delete = "абв"
+
+
 def delete_word(text, delete):
     lst = text.split()
     lst_1 = []
@@ -23,6 +25,6 @@ def delete_word(text, delete):
             lst_1.append(i)
     new_lst = ' '.join(lst_1)
     return new_lst
-        
 
-print(delete_word(text,delete))
+
+print(delete_word(text, delete))
