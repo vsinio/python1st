@@ -20,4 +20,3 @@ def check_1(n):
     return res, end_val - start_val
 
 print(check_1(3))
-print(cls)
